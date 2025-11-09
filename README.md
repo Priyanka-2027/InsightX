@@ -357,30 +357,31 @@ Content-Type: application/json
 
 **Ready to deploy?** We've got you covered!
 
-InsightX is deployed on **[Render](https://render.com)** with both frontend and backend hosted on the free tier.
+InsightX can be deployed on **Railway** (backend) + **Netlify** (frontend) for optimal performance.
 
-### 🌐 Live Application
-- **Frontend:** [https://insightx-frontend.onrender.com](https://insightx-frontend.onrender.com)
-- **Backend API:** [https://insightx-0wzd.onrender.com](https://insightx-0wzd.onrender.com)
+### 🚀 Recommended Setup
 
-### 🚀 Quick Deploy (5 Steps)
+- **Frontend:** Netlify (Free tier, Global CDN, instant deployment)
+- **Backend:** Railway ($5/month after free trial, always-on, fast)
 
-1. **Setup Git LFS** for model files (already configured)
-2. **Push to GitHub** 
-3. **Deploy Backend** on Render (Web Service)
-4. **Update** `config.js` with your backend URL
-5. **Deploy Frontend** on Render (Static Site)
+### 📖 Deployment Guide
 
-**📖 Full Instructions:** See [DEPLOY.md](DEPLOY.md) for step-by-step guide.
+See **[DEPLOY.md](DEPLOY.md)** for complete step-by-step instructions.
+
+**Quick Deploy:**
+1. Deploy backend on [Railway](https://railway.app) (~10 minutes)
+2. Update `config.js` with Railway URL
+3. Deploy frontend on [Netlify](https://netlify.com) (~30 seconds)
 
 ### Deployment Files Included:
-- ✅ `build.sh` - Backend build script
-- ✅ `render.yaml` - One-click deployment config
+- ✅ `railway.json` - Railway configuration
+- ✅ `netlify.toml` - Netlify configuration
 - ✅ `Procfile` - Process definition
+- ✅ `runtime.txt` - Python version (3.11.9)
 - ✅ `config.js` - Environment-aware API setup
-- ✅ `.gitignore` & `.gitattributes` - Git configuration
-- ✅ `download_models.py` - Optional model downloader
+- ✅ `.gitignore` & `.gitattributes` - Git LFS for models (277MB)
 
+---
 ### Model Files Handling:
 - Using **Git LFS** (Large File Storage)
 - Models (277MB) automatically deployed with your code

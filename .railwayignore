@@ -1,0 +1,32 @@
+# Frontend files (not needed for backend)
+index.html
+script.js
+styles.css
+config.js
+logos/
+
+# Jupyter notebooks
+*.ipynb
+Bone/*.ipynb
+Brain/*.ipynb
+Chest/*.ipynb
+Kidney/*.ipynb
+
+# Datasets
+Brain/Dataset/
+Brain/logs/
+Chest/data/
+Kidney/data/
+Bone/Dataset/
+Bone/test_images/
+
+# Documentation
+README.md
+DEPLOYMENT_OPTIONS.md
+
+# Netlify config
+netlify.toml
+
+# Git
+.git/
+.gitignore
