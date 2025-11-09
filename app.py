@@ -24,7 +24,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 MODEL_PATHS = {
     'brain': os.path.join(PROJECT_ROOT, 'Brain', 'brain_model.h5'),
-    'chest': os.path.join(PROJECT_ROOT, 'Chest', 'models', 'densenet121_rsna.pth'),
+    'chest': os.path.join(PROJECT_ROOT, 'Chest', 'densenet121_rsna.pth'),
     'kidney': os.path.join(PROJECT_ROOT, 'Kidney', 'mobilenet_kidney_classifier.pth'),
     'bone': os.path.join(PROJECT_ROOT, 'Bone', 'bone_model.h5')
 }
