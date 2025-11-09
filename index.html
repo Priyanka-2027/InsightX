@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsightX - Medical Imaging Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect x="2" y="2" width="28" height="28" rx="4" stroke="currentColor" stroke-width="2"/>
+                    <path d="M16 8L16 24M8 16L24 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="16" cy="16" r="3" fill="currentColor"/>
+                </svg>
+                <span>INSIGHT<span class="logo-x">X</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Predict</a></li>
+                <li><a href="#about">Contact</a></li>
+                <li><a href="#metrics">Metrics</a></li>
+                <li><a href="#future">Future</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.5 4.5L14 6M6 14L4.5 15.5M15.5 15.5L14 14M6 6L4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M18 11C17 15 13 18 9 18C5 18 2 15 2 11C2 7 5 4 9 4C9.5 4 10 4.1 10.5 4.2C9.5 5.5 9 7.2 9 9C9 13 12 16 16 16C16.8 16 17.5 15.8 18 15.5C18 14 18 12.5 18 11Z" fill="currentColor"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <!-- Floating Particles -->
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        
+        <!-- X-Ray Scan Lines -->
+        <div class="scan-line"></div>
+        <div class="scan-line"></div>
+        
+        <!-- X-Ray Focus Boxes -->
+        <div class="xray-focus"></div>
+        <div class="xray-focus"></div>
+        
+        <!-- Anatomical Line Art -->
+        <svg class="anatomy-line" viewBox="0 0 150 150">
+            <path d="M75,10 Q90,30 75,50 Q60,70 75,90 Q90,110 75,130" stroke-linecap="round"/>
+            <circle cx="75" cy="75" r="40"/>
+            <circle cx="75" cy="75" r="25"/>
+        </svg>
+        
+        <svg class="anatomy-line" viewBox="0 0 180 180">
+            <path d="M90,20 L90,160 M40,90 L140,90" stroke-linecap="round"/>
+            <circle cx="90" cy="60" r="20"/>
+            <circle cx="90" cy="120" r="20"/>
+            <path d="M70,60 Q90,80 110,60" fill="none"/>
+        </svg>
+    </div>
+
+    <!-- Main Page -->
+    <section id="home" class="section active">
+        <div class="hero">
+            <div class="hero-overlay"></div>
+            <h1 class="hero-title">Medical Imaging Analysis</h1>
+            <p class="hero-subtitle">Upload X-ray scans for instant AI-powered diagnosis</p>
+            <button class="hero-cta" id="getStartedBtn">
+                <span>Get Started</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- How It Works -->
+        <div class="info-section how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 8L8 14L20 20L32 14L20 8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M8 20L20 26L32 20M8 26L20 32L32 26" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Upload Scan</h3>
+                    <p>Choose your X-ray or CT image from any device</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="12" stroke="currentColor" stroke-width="2"/>
+                            <path d="M20 14V20L24 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>AI Analysis</h3>
+                    <p>Our model detects patterns in seconds using deep learning</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="8" y="6" width="24" height="28" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M14 14H26M14 20H26M14 26H22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Get Report</h3>
+                    <p>View disease probability, confidence scores, and insights</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Body Part Selection -->
+        <div id="bodyPartSelection" class="selection-section">
+            <h2>Select Body Part</h2>
+            <div class="body-part-grid">
+            <div class="body-card" data-part="chest">
+                <div class="card-icon">
+                    <img src="../logos/chest.png" alt="Chest" />
+                </div>
+                <h3>Chest</h3>
+            </div>
+
+            <div class="body-card" data-part="brain">
+                <div class="card-icon">
+                    <img src="../logos/brain.png" alt="Brain" />
+                </div>
+                <h3>Brain</h3>
+            </div>
+
+            <div class="body-card" data-part="kidney">
+                <div class="card-icon">
+                    <img src="../logos/kidney.png" alt="Kidney" />
+                </div>
+                <h3>Kidney</h3>
+            </div>
+
+            <div class="body-card" data-part="bone">
+                <div class="card-icon">
+                    <img src="../logos/bones.png" alt="Bone" />
+                </div>
+                <h3>Bone</h3>
+            </div>
+        </div>
+        </div>
+
+        <!-- Why Choose InsightX -->
+        <div class="info-section why-choose">
+            <h2>Why Choose <span class="elevated-logo"><span class="elevated-text">INSIGHT</span><span class="logo-x-baseline">X</span></span>?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 8C20 8 16 10 14 14C12 10 8 8 4 8C2 8 2 10 2 12C2 20 8 28 14 36L24 44L34 36C40 28 46 20 46 12C46 10 46 8 44 8C40 8 36 10 34 14C32 10 28 8 24 8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M24 20L24 32M18 26L30 26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>AI Trained on 50,000+ X-rays</h3>
+                    <p>Our models are trained on extensive medical imaging datasets with expert validation</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 4L6 12L24 20L42 12L24 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M6 20L24 28L42 20" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M6 28L24 36L42 28" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Instant Results</h3>
+                    <p>Get comprehensive diagnostic analysis in seconds, not hours or days</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="10" y="14" width="28" height="28" rx="3" stroke="currentColor" stroke-width="2"/>
+                            <path d="M18 14V10C18 8 20 6 22 6H26C28 6 30 8 30 10V14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="24" cy="30" r="4" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Secure & Private</h3>
+                    <p>Your medical data is encrypted and never stored without your explicit consent</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upload Section (Hidden initially) -->
+        <div id="uploadSection" class="upload-container hidden">
+            <button class="back-btn" id="backBtn">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M12 4L6 10L12 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Back
+            </button>
+
+            <div class="upload-card">
+                <h2 id="uploadTitle">Upload X-ray Scan</h2>
+                <div class="upload-zone" id="uploadZone">
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                        <rect x="8" y="16" width="48" height="40" rx="4" stroke="currentColor" stroke-width="2"/>
+                        <path d="M8 40L20 28L28 36L36 28L56 48" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="44" cy="28" r="4" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <p>Drop image here or click to upload</p>
+                    <span>Supported: JPG, PNG, JPEG</span>
+                </div>
+                <div class="preview-zone hidden" id="previewZone">
+                    <img id="previewImage" src="" alt="Preview">
+                    <button class="remove-btn" id="removeBtn">×</button>
+                </div>
+                <button class="predict-btn" id="predictBtn" disabled>Analyze Image</button>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div id="resultsSection" class="results-container hidden">
+            <button class="back-btn" id="resultsBackBtn">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M12 4L6 10L12 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                New Analysis
+            </button>
+
+            <div class="results-grid">
+                <div class="result-card main-result">
+                    <h3>Diagnosis</h3>
+                    <div class="diagnosis-content">
+                        <div class="diagnosis-icon" id="diagnosisIcon"></div>
+                        <h2 id="diagnosisName">-</h2>
+                        <div class="confidence-bar">
+                            <div class="confidence-fill" id="confidenceFill"></div>
+                        </div>
+                        <p class="confidence-text">Confidence: <span id="confidenceValue">0%</span></p>
+                    </div>
+                </div>
+
+                <div class="result-card">
+                    <h3>Analysis</h3>
+                    <p id="analysisText" class="analysis-text">-</p>
+                </div>
+
+                <div class="result-card chart-card">
+                    <h3>Probability Distribution</h3>
+                    <canvas id="resultChart"></canvas>
+                </div>
+
+                <div class="result-card image-card">
+                    <h3>Analyzed Image</h3>
+                    <img id="analyzedImage" src="" alt="Analyzed">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="section">
+        <button class="page-back-btn" onclick="navigateToHome()">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M12 4L6 10L12 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Back to Home
+        </button>
+        <div class="section-header">
+            <h1>Our Team & Contact</h1>
+            <p>Dedicated professionals combining medicine and technology</p>
+        </div>
+
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-photo">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                        <circle cx="40" cy="30" r="12" stroke="currentColor" stroke-width="2"/>
+                        <path d="M20 70C20 58 28 50 40 50C52 50 60 58 60 70" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3>Priyanka J</h3>
+                <p class="role">Data Scientist</p>
+                <a href="tel:++91 63031 79096" class="contact-phone">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M3 2C3 1.5 3.5 1 4 1H6C6.5 1 7 1.5 7 2V4C7 4.5 6.5 5 6 5H5C5 7 6 9 8 9C10 9 11 8 11 6V5C10.5 5 10 4.5 10 4V2C10 1.5 10.5 1 11 1H13C13.5 1 14 1.5 14 2V4C14 8.5 10.5 12 6 12H4C3.5 12 3 11.5 3 11V2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    +91 63031 79096
+                </a>
+            </div>
+
+            <div class="team-card">
+                <div class="team-photo">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                        <circle cx="40" cy="30" r="12" stroke="currentColor" stroke-width="2"/>
+                        <path d="M20 70C20 58 28 50 40 50C52 50 60 58 60 70" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3>Venkata Dinesh K</h3>
+                <p class="role">Full Stack Developer</p>
+                <a href="tel:+91 93473 21844" class="contact-phone">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M3 2C3 1.5 3.5 1 4 1H6C6.5 1 7 1.5 7 2V4C7 4.5 6.5 5 6 5H5C5 7 6 9 8 9C10 9 11 8 11 6V5C10.5 5 10 4.5 10 4V2C10 1.5 10.5 1 11 1H13C13.5 1 14 1.5 14 2V4C14 8.5 10.5 12 6 12H4C3.5 12 3 11.5 3 11V2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    +91 93473 21844
+                </a>
+            </div>
+
+            <div class="team-card">
+                <div class="team-photo">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                        <circle cx="40" cy="30" r="12" stroke="currentColor" stroke-width="2"/>
+                        <path d="M20 70C20 58 28 50 40 50C52 50 60 58 60 70" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3>Balaji M</h3>
+                <p class="role">ML Engineer</p>
+                <a href="tel:+91 91820 03947" class="contact-phone">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M3 2C3 1.5 3.5 1 4 1H6C6.5 1 7 1.5 7 2V4C7 4.5 6.5 5 6 5H5C5 7 6 9 8 9C10 9 11 8 11 6V5C10.5 5 10 4.5 10 4V2C10 1.5 10.5 1 11 1H13C13.5 1 14 1.5 14 2V4C14 8.5 10.5 12 6 12H4C3.5 12 3 11.5 3 11V2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    +91 91820 03947
+                </a>
+            </div>
+
+            <div class="team-card">
+                <div class="team-photo">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                        <circle cx="40" cy="30" r="12" stroke="currentColor" stroke-width="2"/>
+                        <path d="M20 70C20 58 28 50 40 50C52 50 60 58 60 70" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3>Chanikya K</h3>
+                <p class="role">Data Scientist</p>
+                <a href="tel:+91 91827 89929" class="contact-phone">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M3 2C3 1.5 3.5 1 4 1H6C6.5 1 7 1.5 7 2V4C7 4.5 6.5 5 6 5H5C5 7 6 9 8 9C10 9 11 8 11 6V5C10.5 5 10 4.5 10 4V2C10 1.5 10.5 1 11 1H13C13.5 1 14 1.5 14 2V4C14 8.5 10.5 12 6 12H4C3.5 12 3 11.5 3 11V2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    +91 91827 89929
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics Page -->
+    <section id="metrics" class="section">
+        <button class="page-back-btn" onclick="navigateToHome()">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M12 4L6 10L12 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Back to Home
+        </button>
+        <div class="section-header">
+            <h1>Model Performance</h1>
+            <p>Comprehensive analysis of diagnostic accuracy across all systems</p>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-header">
+                    <h3>Chest Disease Classification</h3>
+                    <span class="accuracy-badge">96.5%</span>
+                </div>
+                <div class="metric-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Precision</span>
+                        <span class="stat-value">95.8%</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Recall</span>
+                        <span class="stat-value">97.2%</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">F1-Score</span>
+                        <span class="stat-value">96.5%</span>
+                    </div>
+                </div>
+                <canvas class="metric-chart" data-chart="chest"></canvas>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <h3>Brain Tumor Detection</h3>
+                    <span class="accuracy-badge">90.0%</span>
+                </div>
+                <div class="metric-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Precision</span>
+                        <span class="stat-value">89.5%</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Recall</span>
+                        <span class="stat-value">91.2%</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">F1-Score</span>
+                        <span class="stat-value">90.3%</span>
+                    </div>
+                </div>
+                <canvas class="metric-chart" data-chart="brain"></canvas>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <h3>Kidney Disorder Analysis</h3>
+                    <span class="accuracy-badge">94.8%</span>
+                </div>
+                <div class="metric-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Precision</span>
+                        <span class="stat-value">94.2%</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Recall</span>
+                        <span class="stat-value">95.4%</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">F1-Score</span>
+                        <span class="stat-value">94.8%</span>
+                    </div>
+                </div>
+                <canvas class="metric-chart" data-chart="kidney"></canvas>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <h3>Bone Fracture Detection</h3>
+                    <span class="accuracy-badge">94.12%</span>
+                </div>
+                <div class="metric-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Precision</span>
+                        <span class="stat-value">93.8%</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Recall</span>
+                        <span class="stat-value">94.5%</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">F1-Score</span>
+                        <span class="stat-value">94.1%</span>
+                    </div>
+                </div>
+                <canvas class="metric-chart" data-chart="bone"></canvas>
+            </div>
+        </div>
+
+        <div class="comparison-section">
+            <h2>Model Comparison</h2>
+            <div class="chart-container">
+                <canvas id="comparisonChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Page -->
+    <section id="future" class="section">
+        <button class="page-back-btn" onclick="navigateToHome()">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M12 4L6 10L12 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Back to Home
+        </button>
+        <div class="section-header">
+            <h1>Future Enhancements</h1>
+            <p>Next-generation capabilities in medical imaging AI</p>
+        </div>
+
+        <div class="future-grid">
+            <div class="future-card">
+                <div class="future-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <rect x="8" y="12" width="32" height="24" rx="2" stroke="currentColor" stroke-width="2"/>
+                        <path d="M16 12V8M32 12V8M8 20H40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="16" cy="28" r="2" fill="currentColor"/>
+                        <circle cx="24" cy="28" r="2" fill="currentColor"/>
+                        <circle cx="32" cy="28" r="2" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h3>Real-time Radiology Integration</h3>
+                <p>Direct connection with hospital PACS systems for instant analysis during radiological procedures with automated report generation.</p>
+            </div>
+
+            <div class="future-card">
+                <div class="future-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <path d="M24 8L8 16L24 24L40 16L24 8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M8 24L24 32L40 24M8 32L24 40L40 32" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3>3D Volumetric Analysis</h3>
+                <p>Support for CT and MRI scans with full 3D reconstruction and slice-by-slice anomaly detection with interactive visualization.</p>
+            </div>
+
+            <div class="future-card">
+                <div class="future-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2"/>
+                        <path d="M24 8V24L32 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="24" cy="24" r="3" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h3>Explainable AI Visualizations</h3>
+                <p>Advanced heatmaps and attention mechanisms showing exactly which regions influenced the diagnosis with confidence scoring.</p>
+            </div>
+
+            <div class="future-card">
+                <div class="future-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <rect x="12" y="8" width="24" height="32" rx="3" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2"/>
+                        <path d="M24 18V24L28 26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3>Mobile Diagnostic Platform</h3>
+                <p>Native iOS and Android applications for on-the-go analysis with offline capability and cloud synchronization.</p>
+            </div>
+
+            <div class="future-card">
+                <div class="future-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <path d="M8 24C8 16 12 8 24 8C36 8 40 16 40 24C40 32 36 40 24 40C12 40 8 32 8 24Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M24 16V24L30 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3>Longitudinal Patient Tracking</h3>
+                <p>Track disease progression over time with comparative analysis of historical scans and predictive modeling.</p>
+            </div>
+
+            <div class="future-card">
+                <div class="future-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <circle cx="12" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="36" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
+                        <path d="M18 24H30" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="24" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="24" cy="36" r="4" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3>Multi-modal AI Fusion</h3>
+                <p>Combine imaging data with patient records, lab results, and genetic information for comprehensive diagnostic insights.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 INSIGHT<span class="logo-x">X</span> All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
