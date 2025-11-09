@@ -29,7 +29,7 @@ MODEL_PATHS = {
     'bone': os.path.join(PROJECT_ROOT, 'Bone', 'bone_model.h5')
 }
 
-# Global model storage
+# Store loaded models
 models = {}
 
 # Class labels for each model (updated from notebook analysis)
