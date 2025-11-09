@@ -1,0 +1,21 @@
+# Ignore Python backend files
+requirements.txt
+Procfile
+railway.json
+.railwayignore
+app.py
+
+# Ignore model files
+*.h5
+*.pth
+
+# Ignore datasets and notebooks
+Brain/
+Chest/
+Kidney/
+Bone/
+
+# Ignore Python
+__pycache__/
+*.py[cod]
+venv/
