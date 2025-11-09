@@ -5,7 +5,7 @@ const API_CONFIG = {
     // In development, it uses localhost
     BASE_URL: window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
         ? 'http://localhost:5000'
-        : 'https://insightx-backend.onrender.com', // Replace with your actual Render backend URL
+        : 'https://insightx-0wzd.onrender.com', // Replace with your actual Render backend URL
     
     ENDPOINTS: {
         HEALTH: '/api/health',
