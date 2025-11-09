@@ -4,7 +4,6 @@
 
 🌐 **Live Demo:** [InsightX](https://chanu716.github.io/InsightX/)
 
-
 ## 📋 Table of Contents
 - [Overview](#overview)
 - [Features](#features)
@@ -17,6 +16,7 @@
 - [Deployment](#deployment)
 - [Troubleshooting](#troubleshooting)
 - [Disclaimer](#disclaimer)
+- [Team](#team)             <!-- Added Team to the TOC -->
 
 ---
 
@@ -524,6 +524,17 @@ This application is a **demonstration project** and is intended for:
 - All processing is done in-memory
 - No patient data is logged or transmitted
 - Use appropriate data protection measures if deploying
+
+---
+
+## 👥 Team
+
+| Name          | Role                   | GitHub                                      |
+|---------------|------------------------|---------------------------------------------|
+| Priyanka-2027 | Machine Learning Lead  | [@Priyanka-2027](https://github.com/Priyanka-2027) |
+| Chanu716      | Fullstack Developer    | [@Chanu716](https://github.com/Chanu716)           |
+| Member 3      | Role TBD               | [@GitHubUser3](https://github.com/)                |
+| Member 4      | Role TBD               | [@GitHubUser4](https://github.com/)                |
 
 ---
 
