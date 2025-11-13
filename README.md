@@ -531,10 +531,10 @@ This application is a **demonstration project** and is intended for:
 
 | Name                | Role                  | GitHub                                              | Gmail                       |
 |---------------------|-----------------------|-----------------------------------------------------|-----------------------------|
-| Priyanka J          | Data Scientist        | [@Priyanka-2027](https://github.com/Priyanka-2027)  | priyankaj1703@gmail.com     |
-| Venkata Dinesh K    | Full Stack Developer  | [@venkatadinesh](https://github.com/venkatadinesh)  | venkatadineshk01@gmail.com  |
+| Priyanka J          | Data Scientist        | [@Priyanka-2027](https://github.com/Priyanka-2027)  | priyanka.jakkampudi3@gmail.com     |
+| Venkata Dinesh K    | Full Stack Developer  | [@dinesh34318](https://github.com/venkatadinesh)  | venkatadinesh934@gmail.com  |
 | Balaji M            | ML Engineer           | [@balajim701](https://github.com/balajim701)        | balajim701@gmail.com        |
-| Chanikya K          | Data Scientist        | [@Chanu716](https://github.com/Chanu716)            | chanikyakorrakuti@gmail.com |
+| Chanikya K          | Data Scientist        | [@Chanu716](https://github.com/Chanu716)            | karrichanikya@gmail.com |
 
 ---
 
