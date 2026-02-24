@@ -1,6 +1,6 @@
 # 🏥 InsightX AI - Medical Imaging Analysis Platform
 
-> An AI-powered web application for analyzing medical imaging scans including Brain MRI, Chest X-rays, Kidney CT scans, and Bone fracture detection.
+> An AI-powered web application for analyzing medical imaging scans including Brain MRI, Chest X-rays, Kidney CT scans, and Bone fracture detection
 
 🌐 **Live Demo:** [InsightX](https://chanu716.github.io/InsightX/)
 
