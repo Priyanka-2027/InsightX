@@ -5,7 +5,7 @@
 🌐 **Live Demo:** [InsightX](https://chanu716.github.io/InsightX/)
 
 ## 📋 Table of Contents
-- [Overview](#overview)
+- [Overview](#overview).
 - [Features](#features)
 - [Project Structure](#project-structure)
 - [Installation](#installation)
